@@ -1,0 +1,8 @@
+name: 'LD Data Validator'
+description: 'Counts number of commits'
+outputs:
+  commitCount:
+    description: 'The number of commits in this push'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
