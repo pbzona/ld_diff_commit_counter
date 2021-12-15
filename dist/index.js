@@ -8446,7 +8446,7 @@ const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
 
 const payload = github.context.payload
-core.setOutput('commitCount', payload.commits.length);
+core.setOutput('commitCount', payload.commits.length + 1); // Need to add one to account for current commit
 })();
 
 module.exports = __webpack_exports__;
